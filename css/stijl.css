@@ -30,14 +30,14 @@ body {
 	linear,
 	left top,
 	left bottom,
-	color-stop(0, #000000),
-	color-stop(1, #1C5C10)
+	color-stop(0.51, #26542E),
+	color-stop(0.96, #041201)
 );
-  background-image: -o-linear-gradient(bottom, #000000 0%, #1C5C10 100%);
-  background-image: -moz-linear-gradient(bottom, #000000 0%, #1C5C10 100%);
-  background-image: -webkit-linear-gradient(bottom, #000000 0%, #1C5C10 100%);
-  background-image: -ms-linear-gradient(bottom, #000000 0%, #1C5C10 100%);
-  background-image: linear-gradient(to bottom, #000000 0%, #1C5C10 100%);
+background-image: -o-linear-gradient(bottom, #26542E 51%, #041201 96%);
+background-image: -moz-linear-gradient(bottom, #26542E 51%, #041201 96%);
+background-image: -webkit-linear-gradient(bottom, #26542E 51%, #041201 96%);
+background-image: -ms-linear-gradient(bottom, #26542E 51%, #041201 96%);
+background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
 }
 .greengray {
   background-color: #718067;
@@ -55,9 +55,12 @@ body {
 .centreer {
   text-align: center;
 }
-.titlebar h1 {  
+.titlebar h2 {  
   margin: 0;
   padding: 20px 0 10px 0;  
+}
+.col-xs-3 {
+  padding: 0;
 }
 .col-xs-4 {
   height: 300px;  
@@ -76,7 +79,7 @@ body {
 }
 #header h1 {
   font-family: 'Amerika';
-  font-size: 2.5em;
+  font-size: 2.8em;
 }
 
 
@@ -101,7 +104,13 @@ body {
 #showcase-content {
   width: 100%;
 }
-
+.over-mezelf {
+  border: 1px #587149 solid;
+  height: 160px;
+}
+.over-mezelf .titlebar h2 {
+  padding-top: 20px;
+}
 
 
 /* FOOTER */
