@@ -8,9 +8,17 @@ and open the template in the editor.
     Author     : jan.vanbiervliet
 */
 
+@font-face {
+  font-family: "Amerika";
+  src: url('../fonts/AMERIKA_.eot');
+  src: url('../fonts/AMERIKA_.ttf') format('truetype');
+}
+
+
+
 /* HTML */
 body {
-  background-color: #cccccc;
+  background-color: #e7eae5;
   
 }
 
@@ -23,14 +31,29 @@ body {
 .centreer {
   text-align: center;
 }
-.container {  
+.titlebar { 
+  background: #718067;
+  color: white;
 }
 .col-xs-4 {
   height: 300px;  
 }
-.col-xs-6 {
-  
+.col-xs-6 {  
   height: 330px;
+}
+
+
+
+/* HEADER */
+#header {
+  height: 100px;  
+  background: black;
+  color: #ffffcc;
+  width: 100%;
+}
+#header h1 {
+  font-family: 'Amerika';
+  font-size: 4em;
 }
 
 
@@ -51,15 +74,6 @@ body {
 
 
 
-/* HEADER */
-#header {
-  background: black;
-  color: #ffffcc;
-  width: 100%;
-}
-
-
-
 /* CONTENT */
 #showcase-content {
   width: 100%;
@@ -67,8 +81,7 @@ body {
 #showcase-content .row div {
   border: 1px #f1e5e5 solid;
 }
-#videotheek {
-  background: url(./);
+#videotheek {  
 }
 
 
