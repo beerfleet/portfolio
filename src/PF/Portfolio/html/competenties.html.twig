@@ -1,0 +1,84 @@
+{% extends 'base.twig' %}
+
+{% block title %}Competenties{% endblock %}
+
+{% block mainmenu %}  
+{% embed 'main_menu.twig' %}{% endembed %}
+{% endblock %}
+
+{% block extracss %}
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Questrial" />
+  <link href="./css/competenties.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+
+  <!-- TODO: detailweergave competenties -->
+  <div id="competenties">
+    <h1>Competenties</h1>
+
+    <div id="legende" class="centreer">      
+      <ul>
+        <li>A = Zeer goede kennis.</li>
+        <li>B = Degelijke kennis.</li>      
+        <li>C = Basiskennis</li>
+        <li>D = Vage noties</li>
+      </ul>
+    </div>
+
+    <div id="competentietabel" class="centreer">
+      <table id="wisselKleur" class="centreer"> 
+        <thead>
+          <tr>
+            <th>Competentie</th>
+            <th>Beoordeling</th>
+            <th>Commentaar</th>            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MySQL</td>
+            <td>B</td>
+            <td>Hogeschool opleiding / portfolio projecten</td>            
+          </tr>
+          <tr>
+            <td>CSS / HTML</td>
+            <td>A</td>
+            <td>NHA cursus / portfolio projecten</td>            
+          </tr>
+          <tr>
+            <td>OO</td>
+            <td>B</td>
+            <td>Hogeschool opleiding / PHP OO</td>
+          </tr>
+          <tr>
+            <td>PHP</td>
+            <td>B</td>
+            <td>portfolio projecten</td>
+          </tr>
+          <tr>
+            <td>Twig</td>
+            <td>B</td>
+            <td>portfolio projecten</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>B</td>
+            <td>portfolio projecten</td>
+          </tr>
+          <tr>
+            <td>Linux</td>
+            <td>C</td>
+            <td>Hogeschool opleiding </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block extrajavascript %}
+  <script src="./js/competenties.js"></script>
+{% endblock %}

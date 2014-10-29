@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <title>{% block title %}BASE TEMPLATE{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--> 
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link href="./css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="./css/stijl.css" rel="stylesheet" />
+  {% block extracss %}{% endblock %}
+</head>
+<body>
+  <div id="container">
+
+    <header id="header">
+      {% block header %} 
+        <div id="hdr_text" class="centreer"><h1 id="top">HIER IS DE HEADER TEKST</h1></div>
+      {% endblock %}
+    </header>
+    
+    <nav id="main-menu" class="centreer" style="clear: both;">
+      {% block mainmenu %} HERE GOES THE MENU {% endblock %}
+    </nav>
+
+
+    <div id="content">
+
+      <!-- (error) messages -->
+      <div id="err_boodschap">
+        <span >{{ fout }}</span>
+        <noscript>
+        Javascript is uitgeschakeld .Deze site vereist JavaScript om de 
+        volledige functionaliteit toe te laten !
+        </noscript>
+      </div>
+      <div id="bericht">
+        <span >{{ bericht }}</span>
+      </div>
+
+      <!-- Content to be overwritten -->
+      {% block content %}CONTENT SECTION{% endblock %}
+
+    </div>   
+
+    <div class="push"></div>
+  </div>
+
+  <!-- FOOTER MOET BETER -->
+  <footer id="footer" class="container">{% block footer %}<div>Jan Van Biervliet &copy; 2014</div>{% endblock %}</footer>
+  <script src="./js/jquery-1.11.1.js"></script>
+  <script src="./js/bootstrap.js"></script>  
+  {% block extrajavascript %}
+  {% endblock %}
+</body>
+</html>

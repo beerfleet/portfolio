@@ -1,0 +1,18 @@
+{% extends 'base.twig' %}
+{% block title %}Home{% endblock %}
+
+{% block extracss %}
+  <!-- HOMEPAGE MEER TEKST, MEER 'SCHWING'  -->  
+{% endblock %}
+
+{% block header %}
+{% embed 'header.twig' %}{% endembed %}
+{% endblock %}
+
+{% block mainmenu %}  
+{% embed 'main_menu.twig' %}{% endembed %}
+{% endblock %}
+
+{% block content %}
+{% embed 'homepage_content.twig' %}{% endembed %}
+{% endblock %}

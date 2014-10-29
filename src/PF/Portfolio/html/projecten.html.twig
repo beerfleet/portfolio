@@ -1,0 +1,113 @@
+                           {% extends 'base.twig' %}
+
+{% block title %}Projecten{% endblock %}
+
+{% block extracss %}
+  <link href="./css/projecten.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block mainmenu %}  
+{% embed 'main_menu.twig' %}{% endembed %}
+{% endblock %}
+
+{% block content %}
+  <div id="project_content">
+    <h1>Projecten</h1>
+    <!-- EHBO -->
+
+    <div class="info shadify">
+      <p>
+        Hier heb ik mijn oplossingen voor de PHP oefenopdrachten en eindopdracht 
+        geplaatst. Naarmate ik vorder met de cursus, zullen hier opdrachten 
+        bijkomen. Volgende acties zijn mogelijk:
+      </p>
+      <ul>
+        <li>
+          Klik op de projectnaam voor screenshots en wat uitleg over het 
+          betreffende project. De screenshots zijn clickable.
+        </li>
+        <li>
+          Klikken op een url opent het project in een nieuwe tab of pagina, 
+          afhankelijk van de browser
+        </li>
+        <li>
+          Het is eveneens mogelijk om de broncode van de projecten te 
+          downloaden.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Projecten tabel -->
+    <table id="projecttable" class="shadify bgblue">
+      <thead>
+        <tr>
+          <th>Naam</th>
+          <th>Url</th>
+          <th>Broncode</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td><a href="#" class="show_detail">Videotheek</a></td>
+          <td><a target="_blank" href="http://videotheek.janvanbiervliet.be/">http://videotheek.janvanbiervliet.be/</a></td>
+          <td>
+            <iframe class="frame" style="display:none"></iframe>
+            <a href="javascript:download('files/videotheek.zip')">download</a>
+          </td>
+        </tr>       
+        <tr> 
+          <td><a href="#" class="show_detail">Frisdrank</a></td>
+          <td><a target="_blank" href="http://frisdrank.janvanbiervliet.be/">http://frisdrank.janvanbiervliet.be/</a></td>
+          <td>
+            <iframe class="frame" style="display:none"></iframe>
+            <a href="javascript:download('files/frisdrank.zip')">download</a>
+          </td>
+        </tr>       
+        <tr> 
+          <td><a href="#" class="show_detail">Broodjes</a></td>
+          <td><a target="_blank" href="http://broodjes.janvanbiervliet.be/">http://broodjes.janvanbiervliet.be/</a></td>
+          <td>
+            <iframe class="frame" style="display:none"></iframe>
+            <a href="javascript:download('files/broodjes.zip')">download</a>
+          </td>
+        </tr>       
+        <tr> 
+          <td><a href="#" class="show_detail">Bakkerij</a></td>
+          <td><a target="_blank" href="http://bakkerij.janvanbiervliet.be/">http://bakkerij.janvanbiervliet.be/</a></td>
+          <td>
+            <iframe class="frame" style="display:none"></iframe>
+            <a href="javascript:download('files/bakkerij.zip')">download</a>
+          </td>
+        </tr>  
+        <tr> 
+          <td><a href="#" class="show_detail">Bierbron</a></td>
+          <td><a target="_blank" href="http://bierbron.janvanbiervliet.be/">http://bierbron.janvanbiervliet.be/</a></td>
+          <td>
+            <iframe class="frame" style="display:none"></iframe>
+            {#<a href="javascript:download('files/bierbron.zip')">download</a>#}
+          </td>
+        </tr>  
+
+      </tbody>
+    </table>
+
+    <!-- project detail -->
+    <div id="detail" class="shadify">
+      <p style="text-align: center;">Klik op een projectnaam om de opgave te bekijken</p>
+      <!-- <div id="screenshots">
+        <span id="image1"></span>
+        <span id="image2"></span>
+        <span id="image3"></span>
+      </div>
+      <div id="omschrijving"></div> -->
+    </div>
+
+    <div class="omschrijvingen">
+    {% embed 'omschrijvingen.twig' %}{% endembed %}
+  </div>
+</div>
+{% endblock %}  
+
+{% block extrajavascript %}
+  <script src="./js/projecten.js"></script>
+{% endblock %}
