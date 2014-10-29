@@ -108,8 +108,8 @@ background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
   border: 1px #587149 solid;
   height: 160px;
 }
-.over-mezelf .titlebar h2 {
-  padding-top: 20px;
+.over-mezelf h2 {
+  padding-top: 40px;
 }
 
 
