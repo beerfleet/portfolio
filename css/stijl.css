@@ -17,9 +17,14 @@ and open the template in the editor.
 
 
 /* HTML */
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
 body {
-  background-color: #e7eae5;
-  
+  background-color: #e7eae5;  
 }
 
 
@@ -59,27 +64,32 @@ background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
   margin: 0;
   padding: 20px 0 10px 0;  
 }
-.col-xs-3 {
-  padding: 0;
+.col-xs-4 {
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .col-xs-4 {
   height: 300px;  
 }
-.col-xs-6 {  
-  height: 330px;
+
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -240px;
 }
 
 
 
 /* HEADER */
 #header {
-  height: 120px;    
+  height: 160px;    
   color: #ffffcc;
   width: 100%;
 }
 #header h1 {
   font-family: 'Amerika';
-  font-size: 2.8em;
+  font-size: 4em;
 }
 
 
@@ -100,19 +110,22 @@ background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
 
 
 
+
 /* CONTENT */
 #showcase-content {
   width: 100%;
 }
 .over-mezelf {
   border: 1px #587149 solid;
-  height: 160px;
+  height: 220px;
 }
 .over-mezelf h2 {
   padding-top: 40px;
   margin-left: 10px;
   margin-right: 10px;
 }
+
+
 
 
 /* FOOTER */
@@ -125,4 +138,7 @@ background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
 #footer div {
   padding-top: 18px;
   text-align: center;
+}
+#footer, .push {
+  height: 240px;
 }
