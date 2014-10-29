@@ -15,12 +15,11 @@
 <body>
   <div id="wrapper">
 
-    <header id="header">
-      {% block header %} 
-        <div id="hdr_text" class="centreer"><h1 id="top">HIER IS DE HEADER TEKST</h1></div>
-      {% endblock %}
-    </header>
-    
+    {% block header %} 
+      <div id="hdr_text" class="centreer"><h1 id="top">HIER IS DE HEADER TEKST</h1></div>
+    {% endblock %}
+
+
     <nav id="main-menu" class="centreer" style="clear: both;">
       {% block mainmenu %} HERE GOES THE MENU {% endblock %}
     </nav>

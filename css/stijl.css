@@ -23,34 +23,53 @@ and open the template in the editor.
 html, body {
   height: 100%;
 }
-body {
-  background-color: #e7eae5;  
-}
 
 
 
 /* COLORS */
+body {
+  background-color: #3C6A5F;
+}
 .gradient-black-green {
-  background-image: -webkit-gradient(
-	linear,
-	left top,
-	left bottom,
-	color-stop(0.51, #26542E),
-	color-stop(0.96, #041201)
-);
-background-image: -o-linear-gradient(bottom, #26542E 51%, #041201 96%);
-background-image: -moz-linear-gradient(bottom, #26542E 51%, #041201 96%);
-background-image: -webkit-linear-gradient(bottom, #26542E 51%, #041201 96%);
-background-image: -ms-linear-gradient(bottom, #26542E 51%, #041201 96%);
-background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
+    background-image: -webkit-gradient(
+  	linear,
+  	left top,
+  	left bottom,
+  	color-stop(0.51, #26542E),
+  	color-stop(0.96, #041201)
+  );
+  background-image: -o-linear-gradient(bottom, #26542E 51%, #041201 96%);
+  background-image: -moz-linear-gradient(bottom, #26542E 51%, #041201 96%);
+  background-image: -webkit-linear-gradient(bottom, #26542E 51%, #041201 96%);
+  background-image: -ms-linear-gradient(bottom, #26542E 51%, #041201 96%);
+  background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
 }
 .greengray {
   background-color: #718067;
 }
+.col-sm-4 {
+  background: #3C6A5F;
+}
+
 .titlebar {
   color: white;
 }
 
+/*nav*/
+#nav .navbar-brand {
+  color: yellow;
+}
+#nav li a {
+  color: white;
+}
+#nav li a:hover {
+  color: #cccccc;
+}
+
+/*footer*/
+#footer {
+  color: white;
+}
 
 
 /* MISC */
@@ -64,14 +83,10 @@ background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
   margin: 0;
   padding: 20px 0 10px 0;  
 }
-.col-xs-4 {
-  padding-left: 6px;
-  padding-right: 6px;
+.col-sm-4 {
+  padding-left: 1px;
+  padding-right: 1px;  
 }
-.col-xs-4 {
-  height: 300px;  
-}
-
 #wrapper {
   min-height: 100%;
   height: auto !important;
@@ -81,31 +96,38 @@ background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
 
 
 
+
 /* HEADER */
 #header {
-  height: 160px;    
-  color: #ffffcc;
+  position: relative;
+  height: 160px;      
   width: 100%;
+  padding: 0;
 }
-#header h1 {
+#header h1 {  
+  position: absolute;
+  z-index: 999;
   font-family: 'Amerika';
   font-size: 4em;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 20px;
 }
+#logo-container {
+    
+}
+#logo-container img {
+  width: 100%;
+  height: 160px;
+  float: right;
+}
+
 
 
 
 /* NAV */
-#nav .navbar-brand {
-  color: yellow;
-}
 .navbar {
   margin-bottom: 0;
-}
-#nav li a {
-  color: white;
-}
-#nav li a:hover {
-  color: #cccccc;
 }
 
 
@@ -116,8 +138,8 @@ background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
   width: 100%;
 }
 .over-mezelf {
-  border: 1px #587149 solid;
-  height: 220px;
+  border: 1px #265046 solid;
+  height: 260px;
 }
 .over-mezelf h2 {
   padding-top: 40px;
@@ -131,8 +153,7 @@ background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
 /* FOOTER */
 #footer {  
   height: 100px;
-  width: 100%;
-  color: white;
+  width: 100%;  
   background: black;
 }
 #footer div {
