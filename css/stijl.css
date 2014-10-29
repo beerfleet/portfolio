@@ -29,6 +29,7 @@ html, body {
 /* COLORS */
 body {
   background-color: #3C6A5F;
+  padding-top: 212px;
 }
 .gradient-black-green {
     background-image: -webkit-gradient(
@@ -44,15 +45,25 @@ body {
   background-image: -ms-linear-gradient(bottom, #26542E 51%, #041201 96%);
   background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
 }
+.titlebar h2 {
+  background: orange;
+}
 .greengray {
   background-color: #718067;
 }
 .col-sm-4 {
   background: #3C6A5F;
 }
-
 .titlebar {
   color: white;
+}
+.subtitlebar { 
+  background: black;
+  color: white;
+}
+.omschrijving {
+  color: white;
+  background-color: #A27502;
 }
 
 /*nav*/
@@ -81,17 +92,22 @@ body {
 }
 .titlebar h2 {  
   margin: 0;
-  padding: 20px 0 10px 0;  
+  padding: 20px 0 10px 0;
+}
+.subtitlebar p {
+  margin:0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .col-sm-4 {
   padding-left: 1px;
   padding-right: 1px;  
 }
-#wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -240px;
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -240px;
 }
 
 
@@ -146,7 +162,15 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
-
+.over-mezelf img {
+  padding-top: 10px;  
+}
+.omschrijving {  
+  font-size: 1.6em;
+  height: 62px;
+  margin-top: 25px;
+  padding-top: 13px;
+}
 
 
 
