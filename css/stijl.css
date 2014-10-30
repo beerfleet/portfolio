@@ -31,6 +31,12 @@ body {
   background-color: #3C6A5F;
   padding-top: 212px;
 }
+#bio .titlebar {
+  /*background: #330099;*/
+}
+.bio-content {
+  background: white;
+}
 .gradient-black-green {
     background-image: -webkit-gradient(
   	linear,
@@ -45,30 +51,46 @@ body {
   background-image: -ms-linear-gradient(bottom, #26542E 51%, #041201 96%);
   background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
 }
-.titlebar h2 {
-  background: orange;
-}
 .greengray {
   background-color: #718067;
-}
-.col-sm-12 {
-  padding: 0;
 }
 .col-sm-4 {
   background: #3C6A5F;
   padding-left: 0;
   padding-right: 0;
 }
+.col-sm-3, 
+.col-sm-5, 
+.col-sm-7, 
+.col-sm-8,
+.col-sm-9,
+.col-sm-12 {
+  padding: 0;
+}
 .titlebar {
   color: white;
+}
+.orangebg {
+  background: orange;
 }
 .subtitlebar { 
   background: black;
   color: white;
 }
+#bio .subtitlebar:hover {
+  background-color: #323204;
+  color: gold;
+}
+.btn-selected {
+  background: white;
+  color: black;
+}
 .omschrijving {
   color: white;
   background-color: #A27502;
+}
+.yellowbg {
+  background: yellow;
 }
 
 /*nav*/
@@ -97,13 +119,22 @@ body {
 .centreer {
   text-align: center;
 }
+.lijn_rechts_uit {
+  text-align: right;
+}
+.lijn_links_uit {
+  text-align: left;
+}
+.lijn_uitvullen {
+  text-align: justify;
+}
 .row {
   margin: 0;
   width: 100%;
 }
 .titlebar h2 {  
   margin: 0;
-  padding: 20px 0 10px 0;
+  padding: 10px 0 10px 0;
 }
 .subtitlebar p {
   margin:0;
@@ -184,7 +215,25 @@ body {
   margin-top: 25px;
   padding-top: 13px;
 }
-
+#bio h2 {
+  padding-right: 12px;
+}
+#bio>div {
+  height: 220px;
+}
+#bio ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#bio .subtitlebar {  
+  padding: 10px 10px 10px 0;
+}
+#bio .btn {
+  width: 100%;
+}
+.bio-content {
+  padding: 12px;
+}
 
 
 
