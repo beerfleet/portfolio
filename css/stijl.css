@@ -13,6 +13,11 @@ and open the template in the editor.
   src: url('../fonts/AMERIKA_.eot');
   src: url('../fonts/AMERIKA_.ttf') format('truetype');
 }
+@font-face {
+  font-family: "TobagoPoster";
+  src: url('../fonts/Tobago_Poster.eot');
+  src: url('../fonts/Tobago_Poster.ttf') format('truetype');
+}
 
 
 
@@ -31,11 +36,14 @@ body {
   background-color: #3C6A5F;
   padding-top: 212px;
 }
+#bio {
+  background-color: white;
+}
 #bio .titlebar {
   /*background: #330099;*/
 }
 .bio-content {
-  background: white;
+  /*background: white;*/
 }
 .gradient-black-green {
     background-image: -webkit-gradient(
@@ -68,12 +76,14 @@ body {
   padding: 0;
 }
 .titlebar {
+  font-family: "TobagoPoster";
   color: white;
 }
 .orangebg {
   background: orange;
 }
 .subtitlebar { 
+  font-family: sans-serif;
   background: black;
   color: white;
 }
@@ -219,7 +229,7 @@ body {
   padding-right: 12px;
 }
 #bio>div {
-  height: 220px;
+  /*height: 220px;*/
 }
 #bio ul {
   list-style-type: none;
@@ -236,7 +246,15 @@ body {
 }
 #personalia-content img {
   float: right;
+  margin: 10px 10px 10px 60px;
 }
+.def {
+  font-weight: bold;
+}
+.desc {
+  
+}
+
 
 
 
