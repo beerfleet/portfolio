@@ -11,6 +11,7 @@ function init() {
 }
 
 function hideAllBio() {
+  //$("#personalia-content").hide();
   $("#personalia-content").hide();
   $("#over-mezelf-content").hide();
   $("#sterke-punten-content").hide();
@@ -29,28 +30,28 @@ function addButtonHandlers() {
     clearSelected();
     $('#personalia-btn p').addClass('btn-selected');
     hideAllBio();
-    $("#personalia-content").show();
+    $("#personalia-content").fadeIn("slow")();
   });
   
   $("#over-mezelf-btn").on('click', function() {
     clearSelected();
     $('#over-mezelf-btn p').addClass('btn-selected');
     hideAllBio();
-    $("#over-mezelf-content").show();
+    $("#over-mezelf-content").fadeIn("slow");
   });
   
   $("#sterke-punten-btn").on('click', function() {
     clearSelected();
     $('#sterke-punten-btn p').addClass('btn-selected');
     hideAllBio();
-    $("#sterke-punten-content").show();
+    $("#sterke-punten-content").fadeIn("slow");
   });
   
   $("#varia-btn").on('click', function() {
     clearSelected();
     $('#varia-btn p').addClass('btn-selected');
     hideAllBio();
-    $("#varia-content").show();
+    $("#varia-content").fadeIn("slow");
   });
   
   

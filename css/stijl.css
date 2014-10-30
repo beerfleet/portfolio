@@ -234,6 +234,10 @@ body {
 .bio-content {
   padding: 12px;
 }
+#personalia-content img {
+  float: right;
+}
+
 
 
 
