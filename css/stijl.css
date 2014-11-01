@@ -47,6 +47,7 @@ html, body {
 
 
 
+
 /* COLORS */
 body {
   background-color: #3C6A5F;
@@ -118,7 +119,6 @@ body {
 .yellowbg {
   background: yellow;
 }
-
 /*nav*/
 #nav .navbar-brand {
   color: yellow;
@@ -129,10 +129,13 @@ body {
 #nav li a:hover {
   color: #cccccc;
 }
-
 /*footer*/
 #footer {
   color: white;
+  background: #9B7634;
+}
+#footer .col-sm-4 {
+  background: initial;
 }
 
 
@@ -177,7 +180,7 @@ body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -240px;
+  margin: 0 auto -350px;
 }
 .odd-font {
   font-family: Odd;
@@ -307,15 +310,24 @@ body {
 
 
 /* FOOTER */
-#footer {  
-  height: 100px;
-  width: 100%;  
-  background: black;
+#footer {    
+  width: 100%;    
 }
-#footer div {
-  padding-top: 18px;
+#footer textarea {
+  height: auto;
+}
+#footer input.form-control {
+  margin-bottom: 6px;
+}
+#footer .col-sm-4 {
+  padding-right: 6px;
+}
+#footer .col-sm-12 {
+  padding-top: 12px;
+}
+#footer div {  
   text-align: center;
 }
 #footer, .push {
-  height: 240px;
+  height: 350px;
 }
