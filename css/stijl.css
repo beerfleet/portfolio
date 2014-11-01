@@ -18,6 +18,22 @@ and open the template in the editor.
   src: url('../fonts/Tobago_Poster.eot');
   src: url('../fonts/Tobago_Poster.ttf') format('truetype');
 }
+@font-face {
+  font-family: "Odd";
+  src: url('../fonts/odd.eot');
+  src: url('../fonts/odd.otf') format('truetype');
+}
+@font-face {
+  font-family: "Even";
+  src: url('../fonts/even.eot');
+  src: url('../fonts/even.otf') format('truetype');
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url('../fonts/Quicksand.otf');
+  src: url('../fonts/Quicksand.otf') format('truetype');
+}
+
 
 
 
@@ -151,14 +167,17 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.col-sm-4 {
-  
-}
 #wrapper {
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -240px;
+}
+.odd-font {
+  font-family: Odd;
+}
+.even-font {
+  font-family: Even;
 }
 
 
@@ -251,10 +270,26 @@ body {
 .def {
   font-weight: bold;
 }
-.desc {
-  
+#personalia-content div {
+  padding-bottom: 3px;
 }
-
+#personalia-content>div:nth-child(even) {
+  font-family: Odd;
+}
+#personalia-content>div:nth-child(odd) {
+  font-family: Even;
+}
+#sterke-punten-content, 
+#varia-content {
+  font-family: Quicksand
+}
+#sterke-punten-content {
+  font-size: 1.6em;
+}
+#sterke-punten-content span {
+  font-size: 0.5em;
+  font-family: Even;
+}
 
 
 
