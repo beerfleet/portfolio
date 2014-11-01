@@ -99,7 +99,7 @@ body {
   background: orange;
 }
 .subtitlebar { 
-  font-family: sans-serif;
+  font-family: Odd;
   background: black;
   color: white;
 }
@@ -167,6 +167,12 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.subtitlebar h2 {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
 #wrapper {
   min-height: 100%;
   height: auto !important;
@@ -215,6 +221,9 @@ body {
 .navbar {
   margin-bottom: 0;
 }
+.nav li a {
+  font-family: Even;
+}
 
 
 
@@ -243,6 +252,9 @@ body {
   height: 62px;
   margin-top: 25px;
   padding-top: 13px;
+}
+.omschrijving span {
+  font-family: Amerika;
 }
 #bio h2 {
   padding-right: 12px;
