@@ -18,13 +18,16 @@ if (isset($_POST["email"])) {
   $email = trim($email, " ");
   $message = filter_input(INPUT_POST, 'bericht');
 
-  if ($email && !empty($email) && !empty($message)) {    
+  if ($email && !empty($email) && !empty($message)) {
     $mailer = new MailerService();
     $mailer->verzend_mail($email, $message);
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+      session_start();
+    }
     $_SESSION["email"] = "sent";
     //$output->render('homepage.html.twig', $vars);
-    header("Location: http://janvanbiervliet.be");
+    //header("Location: http://janvanbiervliet.be");
+    header("Location: index.php");
     die();
   }
   else {

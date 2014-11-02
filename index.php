@@ -9,12 +9,13 @@ $classloader = new ClassLoader("PF", "src");
 $classloader->register();
 
 $output = new Output();
-$vars = array();  
+$vars = array();
 
-session_start();
-if (isset($_POST["email"]))  {
-  $vars['bericht'] = 'Mail verzonden. U krijgt zo spoedig mogelijk antwoord.';
-  unset($_POST["email"]);  
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
 }
-session_destroy();
+if (isset($_SESSION["email"])) {
+  $vars['bericht'] = 'Mail verzonden. U krijgt zo spoedig mogelijk antwoord.';
+  unset($_SESSION["email"]);
+}
 $output->render('homepage.html.twig', $vars);
