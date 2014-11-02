@@ -22,7 +22,11 @@ if (isset($_POST["email"])) {
     $vars['bericht'] = 'Mail verzonden. U krijgt zo spoedig mogelijk antwoord.';
     $mailer = new MailerService();
     $mailer->verzend_mail($email, $message);
-    $output->render('homepage.html.twig', $vars);
+    session_start();
+    $_SESSION["email"] = "sent";
+    //$output->render('homepage.html.twig', $vars);
+    header("Location: http://janvanbiervliet.be");
+    die();
   }
   else {
     $vars['fout'] = 'Verzenden mislukt. Kijk alle gegevens op juistheid na.';
