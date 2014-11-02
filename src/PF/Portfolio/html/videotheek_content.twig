@@ -1,0 +1,60 @@
+{% block content %} 
+  <section id="videotheek" class="container">
+    <div class="row"> 
+      <div class="col-sm-12">
+        <div class="titlebar orangebg centreer"><h2>Een rudimentaire videotheek</h2></div>
+        <p class="spacing">
+          Dit is de eerste PHP oefening van de cursus. Het betreft een rudimentaire 
+          videotheek. De oefeningen zijn gesorteerd op toenemende complexiteit.
+          In deze oefening, en in alle volgende zijn de volgende elementen 
+          verwerkt: 
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>
+          <li>Model-View-Controller implementatie</li>
+          <li>PHP code</li>
+          <li>Foutafhandeling</li>
+          <li>MySQL databank</li>
+          <li>CSS</li>
+          <li>Twig werd gebruikt voor de derde en vierde oefening, en uiteraard bij De Bierbron, 
+            een Symfony2 webwinkel</li>
+        </ul>
+      </div>
+
+      <div class="col-sm-6">
+        <p class="subtitlebar spacing">
+          De bedoeling is om een aangemelde gebruiker de mogelijkheden te geven om:
+        </p>
+        <ul>
+          <li>Alle films te tonen</li>
+          <li>Een DVD te zoeken op nummer</li>
+          <li>Een nieuwe filmtitel toe te voegen</li>
+          <li>Een exemplaar van een filmtitel toe te voegen</li>
+          <li>Een filmtitel te verwijderen</li>
+          <li>Een film te verhuren</li>
+          <li>Een film terug in te checken</li>
+        </ul>
+      </div>
+    </div> 
+    <div id="logon-details" class="row">
+      <div class="col-sm-12 centreer green">
+        Login met gebruiker: peter / paswoord: griffin
+      </div>
+    </div>
+  </section><!-- EINDE VIDEOTHEEK section -->
+
+  <section id="actions">
+    <div class="row">
+      <div class="col-sm-6 centreer">
+        <div id="download" class="glyphicon glyphicon-eye-open btn btn-default"> Download broncode</div>
+      </div>
+      <div class="col-sm-6">
+        <div class="glyphicon glyphicon-link btn btn-default"> <a href="http://videotheek.janvanbiervliet.be" target="_blank">Ga naar project</a></div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

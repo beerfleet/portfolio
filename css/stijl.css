@@ -84,6 +84,9 @@ body {
   background-image: -ms-linear-gradient(bottom, #26542E 51%, #041201 96%);
   background-image: linear-gradient(to bottom, #26542E 51%, #041201 96%);
 }
+.green {
+  background: green;
+}
 .greengray {
   background-color: #718067;
 }
@@ -136,6 +139,11 @@ body {
 #nav li a:hover {
   color: #cccccc;
 }
+/*videotheek*/
+#videotheek {
+  background-color: #7C9B94;
+  padding: 20px;
+}
 /*contact*/
 #contact { 
   color: white;
@@ -145,6 +153,9 @@ body {
 }
 #contact input[type="submit"] {
   color: black;
+}
+#logon-details {
+  color: white;  
 }
 /*footer*/
 #footer {
@@ -159,7 +170,7 @@ body {
 
 
 
-/* MISC */
+/*MISC*/
 .clear {
   clear: both;
 }
@@ -178,6 +189,9 @@ body {
 .row {
   margin: 0;
   width: 100%;
+}
+.spacing {
+  padding: 10px;
 }
 .titlebar h2 {  
   margin: 0;
@@ -333,7 +347,26 @@ body {
   margin: 0 auto;
   max-width: 880px;
 }
-
+/*CONTENT: videotheek*/
+#videotheek {    
+  width: 100%;
+  padding: 0;
+}
+#actions .col-sm-6 {
+  padding: 0;
+}
+#actions .glyphicon {
+  width: 100%;
+}
+#actions .glyphicon {
+  font-size: 2em;
+}
+#logon-details {
+  font-family: Even;
+}
+#logon-details div {
+  padding: 20px;
+}
 
 
 
@@ -358,9 +391,6 @@ body {
 }
 #contact .col-sm-4 {
   padding-right: 6px;
-}
-#contact .col-sm-12 {
-  
 }
 #contact div {  
   text-align: center;

@@ -1,0 +1,27 @@
+{% extends 'base.twig' %}
+{% block title %}Opgave project: Videotheek{% endblock %}
+
+{% block extracss %}
+  <link href="./js/flexslider/flexslider.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block header %}
+{% embed 'header.twig' %}{% endembed %}
+{% endblock %}
+
+{% block mainmenu %}  
+{% embed 'main_menu.twig' %}{% endembed %}
+{% endblock %}
+
+{% block content %}
+{% embed 'videotheek_content.twig' %}{% endembed %}
+{% endblock %}
+
+{% block footer %}
+  {% embed 'footer.twig' %}{% endembed %}
+{% endblock footer %}
+
+{% block extrajavascript %}
+  <script src="./js/flexslider/jquery.flexslider.js"></script>
+  <script src="./js/videotheek.js"></script>
+{% endblock extrajavascript %}
