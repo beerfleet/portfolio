@@ -1,0 +1,22 @@
+{% extends 'base.twig' %}
+{% block title %}Opgave project: De Bierbron{% endblock %}
+
+{% block header %}
+{% embed 'header.twig' %}{% endembed %}
+{% endblock %}
+
+{% block mainmenu %}  
+{% embed 'main_menu.twig' %}{% endembed %}
+{% endblock %}
+
+{% block content %}
+{% embed 'bierbron_content.twig' %}{% endembed %}
+{% endblock %}
+
+{% block footer %}
+  {% embed 'footer.twig' %}{% endembed %}
+{% endblock footer %}
+
+{% block extrajavascript %}
+  <script src="./js/bierbron.js"></script>
+{% endblock extrajavascript %}

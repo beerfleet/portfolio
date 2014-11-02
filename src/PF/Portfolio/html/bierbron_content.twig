@@ -1,0 +1,66 @@
+{% block content %}   
+
+  <section id="bierbron" class="content">    
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="titlebar orangebg centreer">
+          <h2>Oefening met Symfony2: &quot;De Bierbron&quot;</h2>
+        </div>
+        <p class="spacing">
+          Fictieve oefening voor Leverancier "De Bierbron". De webshop laat toe 
+          bieren te bestellen, zowel in kleine als in grote hoeveelheden. Voor 
+          bestellingen van &lt; 50&euro; wordt 7.5&euro; leveringskost aangerekend.
+          Klanten moeten zich steeds registreren vooraleer ze kunnen bestellen.
+          Levering is enkel in België mogelijk. 
+        </p>
+        <p class="spacing">
+          De klant kan er ook voor kiezen om zijn bestelling zelf af te halen, 
+          waarbij een korting van 2% op de totaalprijs wordt toegekend. Het 
+          afhalen kan op een aantal &quot;Bierbron&quot; -afhaalpunten. De klant 
+          kan dit afhaalpunt zelf kiezen, maar de applicatie doet wel een voorstel.
+          (het afhaalpunt dat geografisch het dichtst bij zijn adres ligt)
+        </p>
+        <p class="spacing">
+          Betaling gebeurt altijd bij het doorgeven van de bestelling, en er kan 
+          enkel online betaald worden, met PayPal.
+        </p>
+        <p class="spacing">
+          Klanten kunnen op de detailpagina&apos;s van de bieren commentaar of 
+          reviews achterlaten (1 entry per klant per bier per dag), en desgewenst
+          een aantal sterren aan het bier toekennen. Andere bezoekers kunnen deze 
+          informatie lezen tijdens het winkelen. Er is tevens een Facebook-integratie 
+          voorzien, waarbij entries ge-<i>like</i>&apos;d kunne worden. Aanmelding 
+          bij de winkel is hiervoor niet nodig.
+        </p>        
+      </div>
+    </div>
+    <div id="logon-details">
+      <div class="row">
+        <div class="col-sm-12 centreer green">
+          Er is de mogelijkheid om een gebruiker aan te maken door te registreren.
+          Het wachtwoord kan zelf gekozen worden.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 centreer green">
+          Indien er problemen zijn met het ontvangen van de e-mail. Of bij gebrek 
+          aan tijd of zin om te registreren, kan men zich aanmelden met 
+          <span class="subtitlebar">gebruiker: Testgebruiker, paswoord: Appel.Sap</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="actions">
+    <div class="row">
+      <div class="col-sm-6 centreer">
+        <div id="download" class="glyphicon glyphicon-eye-open btn btn-default">
+          <a href="https://github.com/beerfleet/bierbron.git">Github</a>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="glyphicon glyphicon-link btn btn-default"> <a href="http://bierbron.janvanbiervliet.be" target="_blank">Ga naar project</a></div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
