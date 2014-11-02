@@ -24,10 +24,9 @@ if (isset($_POST["email"])) {
     if (session_status() == PHP_SESSION_NONE) {
       session_start();
     }
-    $_SESSION["email"] = "sent";
-    //$output->render('homepage.html.twig', $vars);
-    //header("Location: http://janvanbiervliet.be");
-    header("Location: index.php");
+    $_SESSION["email"] = "sent";    
+    header("Location: http://janvanbiervliet.be");
+    //header("Location: index.php");
     die();
   }
   else {
