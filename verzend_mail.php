@@ -18,8 +18,7 @@ if (isset($_POST["email"])) {
   $email = trim($email, " ");
   $message = filter_input(INPUT_POST, 'bericht');
 
-  if ($email && !empty($email) && !empty($message)) {
-    $vars['bericht'] = 'Mail verzonden. U krijgt zo spoedig mogelijk antwoord.';
+  if ($email && !empty($email) && !empty($message)) {    
     $mailer = new MailerService();
     $mailer->verzend_mail($email, $message);
     session_start();
