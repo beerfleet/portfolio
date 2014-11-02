@@ -140,7 +140,11 @@ body {
   color: #cccccc;
 }
 /*videotheek*/
-#videotheek {
+#videotheek,
+#frisdrank,
+#broodjes,
+#bakkerij, 
+#bierbron {
   background-color: #7C9B94;
   padding: 20px;
 }
@@ -348,7 +352,11 @@ body {
   max-width: 880px;
 }
 /*CONTENT: videotheek*/
-#videotheek {    
+#videotheek, 
+#frisdrank, 
+#broodjes, 
+#bakkerij, 
+#bierbron {    
   width: 100%;
   padding: 0;
 }
