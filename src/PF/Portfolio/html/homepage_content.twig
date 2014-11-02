@@ -123,5 +123,35 @@
         </a>
       </li>
     </ul>
+  </div><!-- EINDE FLEXSLIDER MOIJN PROJECTEN -->
+
+  <div id="contact" class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <span class="titlebar orangebg"><h2>Contact</h2></span>
+      </div>
+    </div>
+    <form class="form-horizontal" action="verzend_mail.php" method="post">        
+      <div class="row">
+        <div class="col-sm-4 form-group-sm">
+          <label for="voornaam">Voornaam</label>
+          <input class="form-control" type="text" id="voornaam" name="voornaam" />
+          <label for="achternaam">Achternaam</label>
+          <input class="form-control" type="text" id="achternaam" name="achternaam" />
+          <label for="email">E-mailadres</label>
+          <input class="form-control" type="email" id="email" name="email" />          
+        </div>
+        <div class="col-sm-8 form-group-sm">
+          <label for="message">Bericht</label>
+          <textarea id="message" class="form-control" rows="8" name="bericht"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <input class="btn btn-default" type="submit" value="Verstuur" />
+          
+        </div>
+      </div>
+    </form>
   </div>
 </div><!-- EINDE CONTAINER -->

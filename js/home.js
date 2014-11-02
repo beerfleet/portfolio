@@ -63,5 +63,6 @@ function addButtonHandlers() {
 function slider() {
   $('.flexslider').flexslider({
     animation: "slide"
+    
   });
 }
