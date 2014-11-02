@@ -149,7 +149,8 @@ body {
 /*footer*/
 #footer {
   color: white;
-  background: #9B7634;
+  /*background: #9B7634;*/
+  background: black;
 }
 #footer .col-sm-4 {
   background: initial;
@@ -201,7 +202,7 @@ body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -350px;
+  margin: 0 auto -100px;
 }
 .odd-font {
   font-family: Odd;
@@ -371,8 +372,8 @@ body {
 /* FOOTER */
 #footer {    
   width: 100%; 
-  padding-top: 60px;
+  padding-top: 30px;
 }
 #footer, .push {
-  height: 350px;
+  height: 100px;
 }
