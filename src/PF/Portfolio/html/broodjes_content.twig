@@ -1,0 +1,59 @@
+{% block content %}   
+
+  <section id="broodjes" class="content">    
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="titlebar orangebg centreer">
+          <h2>Nummer drie: Broodjes besteldienst</h2>
+        </div>
+        <p class="spacing">
+          Voor deze oefening was de opdracht om een webtoepassing te maken waarmee 
+          VDAB PHP cursisten broodjes kunnen bestellen in de kantine. De cursist dient 
+          zicht vooraf te registreren bij het systeem en krijgt een gegenereerd 
+          wachtwoord via het opgegeven e-mailadres toegestuurd. De cursist kan zich 
+          vervolgens aanmelden met het emailadres en paswoord. Indien de cursist het
+          wachtwoord kwijt / vergeten is, kan een nieuw wachtwoord worden aangevraagd.
+        </p>
+        <p class="spacing">
+          Eens de gebruiker aangemeld is, kan hij / zij uit een lijst van types 
+          broodjes kiezen, en deze vervolgens -al dan niet- beleggen. Na de bestelling 
+          krijgt de gebruiker de totaalprijs te zien, en kan deze bestelling niet meer 
+          worden gewijzigd.
+        </p>
+        <p class="spacing">
+          De kantine moet de bestelling tijdig kunnen doorgeven, dus is het met andere
+          woorden mogelijk om tot 09:59 te bestellen. Vanaf 10:00 kan enkel de 
+          bestelling worden geraadpleegd. Er is dus enkel 1 bestellng per dag mogelijk.
+          Er kunnen echter meerdere broodjes bij 1 enkele order worden besteld.
+        </p>
+      </div>
+    </div>
+    <div id="logon-details">
+      <div class="row">
+        <div class="col-sm-12 centreer green">
+          Er is de mogelijkheid om een gebruiker aan te maken door te registreren.
+          In de verzonden mail kan dan het gegenereerde wachtwoord geraadpleegd worden.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 centreer green">
+          Indien er problemen zijn met het ontvangen van de e-mail. Of bij gebrek 
+          aan tijd of zin om te registreren, kan men zich aanmelden met 
+          <span class="subtitlebar">gebruiker: jvbiervliet@gmail.com, paswoord: $hoW</span> of met
+          <span class="subtitlebar">gebruiker: reptilitis@gmail.com, paswoord: WtVa</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="actions">
+    <div class="row">
+      <div class="col-sm-6 centreer">
+        <div id="download" class="glyphicon glyphicon-eye-open btn btn-default"> Download broncode</div>
+      </div>
+      <div class="col-sm-6">
+        <div class="glyphicon glyphicon-link btn btn-default"> <a href="http://broodjes.janvanbiervliet.be" target="_blank">Ga naar project</a></div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

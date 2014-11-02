@@ -1,6 +1,5 @@
 $(function () {
-  init();
-  scrollMinimize();
+  init();  
   slider();
 });
 
@@ -10,17 +9,6 @@ function init() {
   hideAllBio();
   addButtonHandlers();
   $("#personalia-content").show();
-}
-
-function scrollMinimize() {
-  $(window).scroll(function () {
-    var scrolled = $(window).scrollTop();
-    if (scrolled > 48) {
-      $("#header").hide("fast");
-    } else {
-      $("#header").show("fast");
-    }
-  });
 }
 
 function hideAllBio() {

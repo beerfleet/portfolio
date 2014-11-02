@@ -14,15 +14,15 @@
 </head>
 <body>
   <div id="wrapper">
-    
-    <div class="navbar-fixed-top">
-    {% block header %} 
-      <div id="hdr_text" class="centreer"><h1 id="top">HIER IS DE HEADER TEKST</h1></div>
-    {% endblock %}
 
-    <nav id="main-menu" class="centreer" style="clear: both;">
-      {% block mainmenu %} HERE GOES THE MENU {% endblock %}
-    </nav>
+    <div class="navbar-fixed-top">
+      {% block header %} 
+        <div id="hdr_text" class="centreer"><h1 id="top">HIER IS DE HEADER TEKST</h1></div>
+      {% endblock %}
+
+      <nav id="main-menu" class="centreer" style="clear: both;">
+        {% block mainmenu %} HERE GOES THE MENU {% endblock %}
+      </nav>
     </div>
 
 
@@ -36,7 +36,7 @@
         volledige functionaliteit toe te laten !
         </noscript>
       </div>
-        <div id="bericht" class="centreer">
+      <div id="bericht" class="centreer">
         <span >{{ bericht }}</span>
       </div>
 
@@ -52,6 +52,18 @@
   {% block footer %} <div id="footer"><div>Jan Van Biervliet &copy; 2014</div></div>{% endblock %}
   <script src="./js/jquery-1.11.1.js"></script>
   <script src="./js/bootstrap.js"></script>  
+  <script type="text/javascript">
+    $(function () {
+      $(window).scroll(function () {
+        var scrolled = $(window).scrollTop();
+        if (scrolled > 48) {
+          $("#header").hide("fast");
+        } else {
+          $("#header").show("fast");
+        }
+      });
+    });
+  </script>
   {% block extrajavascript %}
   {% endblock %}
 </body>

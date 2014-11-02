@@ -1,0 +1,22 @@
+{% extends 'base.twig' %}
+{% block title %}Opgave project: Broodjes{% endblock %}
+
+{% block header %}
+{% embed 'header.twig' %}{% endembed %}
+{% endblock %}
+
+{% block mainmenu %}  
+{% embed 'main_menu.twig' %}{% endembed %}
+{% endblock %}
+
+{% block content %}
+{% embed 'broodjes_content.twig' %}{% endembed %}
+{% endblock %}
+
+{% block footer %}
+  {% embed 'footer.twig' %}{% endembed %}
+{% endblock footer %}
+
+{% block extrajavascript %}
+  <script src="./js/broodjes.js"></script>
+{% endblock extrajavascript %}
