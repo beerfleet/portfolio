@@ -1,0 +1,96 @@
+{% block content %}   
+
+  <section id="bakkerij" class="content">    
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="titlebar orangebg centreer">
+          <h2>Eindoefening PHP: Broodjes besteldienst</h2>
+        </div>
+        <p class="spacing">
+          De Bakkerij was mijn eindopdracht voor de PHP module. Door middel van de 
+          eindoefening gaat de tutor na of de cursist in staat 
+          is de verschillende aangeleerde technieken te combineren tot &eacute;&eacute;n
+          groter project. De items die aan bod komen zijn:
+        </p>
+        <ul>
+          <li>Ontwerp van de databank</li>
+          <li>Ontwikkeling van een meerlagenarchitectuur (MVC)</li>
+          <li>Opmaken van een gebruiksvriendelijke user interface</li>
+          <li>Correcte foutafhandeling</li>
+          <li>Doctrine classloader</li>
+          <li>Twig templating</li>
+        </ul>
+        <p class="spacing">
+          Deze oefening lijkt in sommige opzichten op de vorige, wat de opdracht 
+          betreft. Het gaat over een bakkerij die haar diensten wil uitbreiden naar 
+          het web, zodat klanten op voorhand orders kunen plaatsen, die ze dan later 
+          zelf kunnen afhalen.
+        </p>
+        <p class="spacing">
+          Een klant moet zich dus eerst online registreren, om later te kunnen 
+          aanmelden met zijn / haar paswoord. Paswoord kan aanvankelijk niet zelf 
+          worden gekozen, maar na het aanmelden is er wel mogelijkheid om klantgegevens
+          - waaronder ook het wachtwoord - aan te passen. Enkel e-mailadres is 
+          onveranderlijk.
+        </p>
+        <p class="spacing">
+          Na aanmelding kunnen de klanten verschillende producten aan hun winkelmand 
+          toevoegen. Er worden geen promoties gegeven.
+        </p>
+        <p class="spacing">
+          Wanneer een bestelling wordt geplaatst, krijgt de klant een overzicht te 
+          zien van de bestelling. Op dit moment kan de gebruiker nog terug naar de 
+          bestelling om eventuele aanpassingen te doen, indien nodig. Zoniet moet de
+          klant een datum kiezen waarop de bestelling zal worden opgehaald. Er kan 
+          maximum 3 dagen vooruit worden besteld. Er is &eacute;&eacute;n bestelling
+          per dag mogelijk, en er kan nooit voor de huidige dag worden besteld.
+        </p>
+        <p class="spacing">
+          Bestellingen kunnen geannuleerd worden, ten laatste de dag voor de dag 
+          waarop de ophaling gebeurt. Een bestelling kan geannuleerd worden in het 
+          overzichtscherm van de gemaakte bestelling(en). Gemaakte bestellingen kunnen
+          niet meer gewijzigd worden.
+        </p>  
+        <p class="spacing">
+          De klantgegevens worden in de databank bewaard. Het wachtwoord is 
+          ge&euml;ncrypteers met SHA1. Een klant kan ook geblokkeerd worden zodat 
+          deze geen bestelling meer kan plaatsen.
+        </p>
+        <p class="spacing">
+          De laatste correcte aanmelding wordt bijgehouden in een cookie. Het 
+          wachtwoord dient wel opnieuw te worden ingegeven.
+        </p>
+        <p class="spacing">
+          Er is ook een gastenboek voorzien.
+        </p>
+      </div>
+    </div>
+    <div id="logon-details">
+      <div class="row">
+        <div class="col-sm-12 centreer green">
+          Er is de mogelijkheid om een gebruiker aan te maken door te registreren.
+          In de verzonden mail kan dan het gegenereerde wachtwoord geraadpleegd worden.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 centreer green">
+          Indien er problemen zijn met het ontvangen van de e-mail. Of bij gebrek 
+          aan tijd of zin om te registreren, kan men zich aanmelden met 
+          <span class="subtitlebar">gebruiker: jvbiervliet@gmail.com, paswoord: Appel.Sap</span> of met
+          <span class="subtitlebar">gebruiker: reptilitis@gmail.com, paswoord: Appel.Sap</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="actions">
+    <div class="row">
+      <div class="col-sm-6 centreer">
+        <div id="download" class="glyphicon glyphicon-eye-open btn btn-default"> Download broncode</div>
+      </div>
+      <div class="col-sm-6">
+        <div class="glyphicon glyphicon-link btn btn-default"> <a href="http://bakkerij.janvanbiervliet.be" target="_blank">Ga naar project</a></div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
